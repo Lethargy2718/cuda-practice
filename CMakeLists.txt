@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.18)
+project(cuda_practice LANGUAGES CXX CUDA)
+set(CMAKE_CUDA_ARCHITECTURES native)
+file(GLOB SOURCES "*.cpp" "*.cu")
+add_executable(cuda_practice ${SOURCES})
